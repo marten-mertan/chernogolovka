@@ -310,7 +310,9 @@
         .mult-products-character {
           width: 131px;
           height: 180px;
-          margin: 0; } }
+          margin: 0;
+          background: url("../assets/img/products-img-mobile.png") 50% 50% no-repeat;
+          background-size: cover; } }
     .mult-products-list {
       position: absolute;
       top: 47%;

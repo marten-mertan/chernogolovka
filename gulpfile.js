@@ -97,7 +97,7 @@ function buildAssets(cb) {
       .pipe(dest('docs/'));
   
     src(['src/assets/img/**/*.*', '!src/assets/img/keks/**/*.*'])
-      .pipe(imagemin())
+      //.pipe(imagemin())
       .pipe(dest('docs/assets/img/'));
 
     src('src/assets/img/keks/**/*.*')
