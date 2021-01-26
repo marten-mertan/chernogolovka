@@ -499,6 +499,8 @@
                     line-height: 10px;
                     margin:0 8px 0 10px;
                     border-bottom: 1px dashed #c4c4c4;
+                    border-collapse: separate;
+                    border-spacing: 2px 0;
                 }
                 &__value{
                     flex: 0 0 auto;
