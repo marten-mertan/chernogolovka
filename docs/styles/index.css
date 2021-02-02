@@ -576,17 +576,36 @@
           flex-direction: column;
           align-items: center; } }
     .mult-advise-img {
+      flex: 0 0 auto;
       width: 289px;
       height: 367px;
       margin-right: 26px;
       background: url("../assets/img/mysia.png") 50% 50% no-repeat;
       background-size: contain; }
+      @media (max-width: 1200px) {
+        .mult-advise-img {
+          width: 141px;
+          height: 179px; } }
       @media (max-width: 767px) {
         .mult-advise-img {
           width: 141px;
           height: 179px;
           background: url("../assets/img/mysia-mobile.png") 50% 50% no-repeat;
           background-size: contain; } }
+    .mult-advise-quote {
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      margin: auto 20px auto auto;
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 4px; }
+      @media (max-width: 767px) {
+        .mult-advise-quote {
+          padding: 20px;
+          margin: 0 0 20px 0; } }
     .mult-advise-cloud {
       display: flex;
       padding: 72px 68px;
@@ -605,6 +624,7 @@
           background-size: contain;
           margin: 0 0 20px 0; } }
     .mult-advise-new {
+      flex: 0 0 auto;
       width: 55px;
       height: 52px;
       background: url("../assets/img/advise-new.png") 50% 50% no-repeat;
