@@ -630,7 +630,9 @@
       background: url("../assets/img/advise-new.png") 50% 50% no-repeat;
       background-size: contain;
       transition: all .3s ease;
-      cursor: pointer; }
+      cursor: pointer;
+      align-self: center;
+      margin: auto; }
     .mult-advise blockquote {
       padding: 0 0 0 55px;
       font-style: normal;
