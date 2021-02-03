@@ -119,6 +119,13 @@ $(window).load(function(){
         e.preventDefault();
         $('.js-product-description').removeClass('open');
     });
+    $(document).on('click','.js-hide-block', function(e){
+        e.preventDefault();
+        let ref = $(this).data('block');
+        $('section').not('.'+ref).slideDown('slow');
+        $('section.' + ref).slideToggle('slow');
+    });
+
 });
 
 /***/ })

@@ -216,7 +216,6 @@
       right: 40px; }
   .mult-products {
     position: relative;
-    min-height: 503px;
     background-color: #adc5e7;
     margin-bottom: 40px; }
     @media (max-width: 767px) {
@@ -528,7 +527,6 @@
             display: none; } }
   .mult-advise {
     position: relative;
-    min-height: 503px;
     background-color: #707eBd;
     margin-bottom: 40px; }
     @media (max-width: 767px) {
@@ -659,7 +657,6 @@
             line-height: 12px; } }
   .mult-fact {
     position: relative;
-    min-height: 503px;
     background-color: #ffc525;
     margin-bottom: 40px; }
     @media (max-width: 767px) {
