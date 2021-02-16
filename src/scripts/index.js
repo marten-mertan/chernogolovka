@@ -35,5 +35,29 @@ $(window).load(function(){
         $('section').not('.'+ref).slideDown('slow');
         $('section.' + ref).slideToggle('slow');
     });
+    
+    $(window).scroll(function() {
+        let scroll = $(window).scrollTop();
+        let height = $(window).height();
+        console.log(height);
+        $('.js-parallax').each(function(){
+            $this = $(this);
+            let offset = $this.offset();
+            console.log(offset, scroll);
+            if ($this.hasClass('mod-p-1')){
+                $this.css('transform', 'translateY('+(-scroll+(offset.top+height)/2)*0.12+'px)');
+                return;
+            }
+            if ($this.hasClass('mod-p-2')){
+                $this.css('transform', 'translateY('+(-scroll+(offset.top+height)/2)*0.08+'px)');
+                return;
+            }
+            if ($this.hasClass('mod-p-3')){
+                $this.css('transform', 'translateY('+(-scroll+(offset.top+height)/2)*0.04+'px)');
+                return;
+            }
+            $this.css('transform', 'translateY('+(-scroll+(offset.top+height)/2)*0+'px)');
+        });
+    });
 
 });

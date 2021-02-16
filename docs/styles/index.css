@@ -1,3 +1,390 @@
+.mission {
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .mission {
+      padding: 0 0 165% 0;
+      max-height: 0; } }
+  .mission-block {
+    flex: 0 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #30A657;
+    border-radius: 50%;
+    width: 223px;
+    height: 223px;
+    padding: 12px;
+    transition: all .15s ease; }
+    @media (min-width: 768px) {
+      .mission-block {
+        position: absolute; } }
+    .mission-block:after {
+      display: block;
+      position: absolute;
+      content: '';
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
+      border-radius: 50%;
+      box-shadow: 0px 0px 3px rgba(51, 51, 51, 0.4);
+      z-index: -1; }
+    .mission-block h2 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 7.5vw;
+      line-height: 9.33vw;
+      text-align: center;
+      color: white;
+      margin-bottom: 10px; }
+      @media (min-width: 768px) {
+        .mission-block h2 {
+          font-size: 24px;
+          line-height: 28px; } }
+      @media (min-width: 1320px) {
+        .mission-block h2 {
+          font-size: 30px;
+          line-height: 37px; } }
+    .mission-block p {
+      font-size: 3.14vw;
+      line-height: 4vw;
+      font-weight: 400;
+      text-align: center;
+      color: white;
+      margin: 0; }
+      @media (min-width: 768px) {
+        .mission-block p {
+          font-size: 12px;
+          line-height: 15px; } }
+      @media (min-width: 1320px) {
+        .mission-block p {
+          font-size: 15px;
+          line-height: 18px; } }
+  .mission .mod-mission-1 {
+    width: 69.69vw;
+    height: 69.69vw;
+    background: #30A657;
+    margin: 0 -11px 4px auto;
+    padding: 4.2%; }
+    @media (min-width: 768px) {
+      .mission .mod-mission-1 {
+        width: 37.4%;
+        height: 22.667%;
+        left: 31%;
+        top: -3%;
+        padding: 38px; } }
+    .mission .mod-mission-1:after {
+      top: -6px;
+      left: -7px; }
+      @media (min-width: 768px) {
+        .mission .mod-mission-1:after {
+          top: -10px;
+          left: -11px;
+          width: calc(100% + 37px);
+          height: calc(100% + 37px); } }
+  .mission .mod-mission-2 {
+    background: #E7B500;
+    margin: 0 auto -7px -8px;
+    width: 63.44vw;
+    height: 63.44vw;
+    padding: 4.2%; }
+    @media (min-width: 768px) {
+      .mission .mod-mission-2 {
+        width: 31.3%;
+        height: 18.97%;
+        left: 10%;
+        top: 18.5%;
+        padding: 12px; } }
+    @media (min-width: 1320px) {
+      .mission .mod-mission-2 {
+        padding: 38px; } }
+    .mission .mod-mission-2:after {
+      top: -15px;
+      left: -14px; }
+      @media (min-width: 768px) {
+        .mission .mod-mission-2:after {
+          top: -23px;
+          left: -22px;
+          width: calc(100% + 31px);
+          height: calc(100% + 31px); } }
+  .mission .mod-mission-3 {
+    background: #416528;
+    margin: 0 -8px 12px auto;
+    width: 65.625vw;
+    height: 65.625vw;
+    padding: 6%; }
+    @media (min-width: 768px) {
+      .mission .mod-mission-3 {
+        width: 34.7%;
+        height: 21.031%;
+        left: 63%;
+        top: 19.5%;
+        padding: 16px; } }
+    @media (min-width: 1320px) {
+      .mission .mod-mission-3 {
+        padding: 48px; } }
+    .mission .mod-mission-3:after {
+      top: -5px;
+      left: -6px; }
+      @media (min-width: 768px) {
+        .mission .mod-mission-3:after {
+          top: -9px;
+          left: -10px;
+          width: calc(100% + 33px);
+          height: calc(100% + 33px); } }
+  .mission .mod-mission-4 {
+    background: #D88600;
+    margin: 0 auto 0 -16px;
+    width: 63.125vw;
+    height: 63.125vw;
+    padding: 10% 5% 5%; }
+    @media (min-width: 768px) {
+      .mission .mod-mission-4 {
+        width: 31.4%;
+        height: 19.031%;
+        left: 56%;
+        top: 42.5%;
+        padding: 8px 7px 16px; } }
+    @media (min-width: 1320px) {
+      .mission .mod-mission-4 {
+        padding: 41px 24px 24px; } }
+    .mission .mod-mission-4 h2 {
+      font-size: 6.2vw;
+      line-height: 7.5vw; }
+      @media (min-width: 768px) {
+        .mission .mod-mission-4 h2 {
+          font-size: 20px;
+          line-height: 28px; } }
+      @media (min-width: 1320px) {
+        .mission .mod-mission-4 h2 {
+          font-size: 30px;
+          line-height: 37px; } }
+    .mission .mod-mission-4:after {
+      top: -6px;
+      left: -6px; }
+      @media (min-width: 768px) {
+        .mission .mod-mission-4:after {
+          top: -9px;
+          left: -10px;
+          width: calc(100% + 30px);
+          height: calc(100% + 30px); } }
+  .mission .mod-mission-5 {
+    background: #729D31;
+    margin: 0 -8px 12px auto;
+    width: 65.94vw;
+    height: 65.94vw;
+    padding: 5%; }
+    @media (min-width: 768px) {
+      .mission .mod-mission-5 {
+        width: 34.8%;
+        height: 21.091%;
+        left: 3%;
+        top: 41%;
+        padding: 12px; } }
+    @media (min-width: 1320px) {
+      .mission .mod-mission-5 {
+        padding: 39px; } }
+    .mission .mod-mission-5:after {
+      top: -5px;
+      left: -6px; }
+      @media (min-width: 768px) {
+        .mission .mod-mission-5:after {
+          top: -9px;
+          left: -10px;
+          width: calc(100% + 32px);
+          height: calc(100% + 32px); } }
+  .mission .mod-mission-6 {
+    background: #E7B601;
+    margin: 0 auto -3px -8px;
+    width: 63.125vw;
+    height: 63.125vw;
+    padding: 4.2%; }
+    @media (min-width: 768px) {
+      .mission .mod-mission-6 {
+        width: 31.4%;
+        height: 19.031%;
+        left: 68%;
+        top: 63.5%;
+        padding: 16px; } }
+    .mission .mod-mission-6 h2 {
+      font-size: 6.2vw;
+      line-height: 7.5vw; }
+      @media (min-width: 768px) {
+        .mission .mod-mission-6 h2 {
+          font-size: 22px;
+          line-height: 28px; } }
+      @media (min-width: 1320px) {
+        .mission .mod-mission-6 h2 {
+          font-size: 30px;
+          line-height: 37px; } }
+    .mission .mod-mission-6:after {
+      top: -15px;
+      left: -14px; }
+      @media (min-width: 768px) {
+        .mission .mod-mission-6:after {
+          top: -23px;
+          left: -22px;
+          width: calc(100% + 30px);
+          height: calc(100% + 30px); } }
+  .mission .mod-mission-7 {
+    background: #426629;
+    margin: 0 -3px 6px auto;
+    width: 63.125vw;
+    height: 63.125vw;
+    padding: 4.2%; }
+    @media (min-width: 768px) {
+      .mission .mod-mission-7 {
+        width: 31.4%;
+        height: 19.031%;
+        left: 31%;
+        top: 64%;
+        padding: 23px; } }
+    .mission .mod-mission-7:after {
+      top: -6px;
+      left: -6px; }
+      @media (min-width: 768px) {
+        .mission .mod-mission-7:after {
+          top: -9px;
+          left: -10px;
+          width: calc(100% + 30px);
+          height: calc(100% + 30px); } }
+  .mission .mod-mission-8 {
+    background: #D98602;
+    margin: 0 auto 0 -10px;
+    width: 63.125vw;
+    height: 63.125vw;
+    padding: 10% 5% 5%; }
+    @media (min-width: 768px) {
+      .mission .mod-mission-8 {
+        width: 31.4%;
+        height: 19.031%;
+        left: 2%;
+        top: 82%;
+        padding: 15px; } }
+    .mission .mod-mission-8:after {
+      top: -6px;
+      left: -6px; }
+      @media (min-width: 768px) {
+        .mission .mod-mission-8:after {
+          top: -9px;
+          left: -10px;
+          width: calc(100% + 30px);
+          height: calc(100% + 30px); } }
+  .mission-decor {
+    position: absolute;
+    width: 21.875vw;
+    height: 21.875vw;
+    background: url("../assets/img/mission-decor-1.png") 50% 50% no-repeat;
+    background-size: contain; }
+    @media (min-width: 768px) {
+      .mission-decor {
+        width: 150px;
+        height: 150px; } }
+    .mission-decor:after {
+      display: block;
+      position: absolute;
+      content: '';
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0px 0px 3px rgba(51, 51, 51, 0.4);
+      z-index: -1; }
+      @media (min-width: 768px) {
+        .mission-decor:after {
+          width: calc(100% + 20px);
+          height: calc(100% + 20px); } }
+  .mission .mod-decor-1 {
+    right: calc(100% + 11px);
+    bottom: 7px; }
+    @media (min-width: 768px) {
+      .mission .mod-decor-1 {
+        width: 40.11%;
+        height: 40.11%;
+        right: 114%;
+        bottom: 27%; } }
+    .mission .mod-decor-1:after {
+      top: -8px;
+      left: -5px; }
+      @media (min-width: 768px) {
+        .mission .mod-decor-1:after {
+          top: -18px;
+          left: -11px; } }
+  .mission .mod-decor-2 {
+    background: url("../assets/img/mission-decor-3.png") 50% 50% no-repeat;
+    background-size: contain;
+    left: calc(100% + 23px);
+    top: 15px; }
+    @media (min-width: 768px) {
+      .mission .mod-decor-2 {
+        width: 47.925%;
+        height: 47.925%;
+        left: 214%;
+        top: -95%; } }
+    .mission .mod-decor-2:after {
+      top: -3px;
+      left: -8px; }
+      @media (min-width: 768px) {
+        .mission .mod-decor-2:after {
+          top: -6px;
+          left: -18px; } }
+  .mission .mod-decor-3 {
+    background: url("../assets/img/mission-decor-2.png") 50% 50% no-repeat;
+    background-size: contain;
+    right: calc(100% + 14px);
+    bottom: 1px; }
+    @media (min-width: 768px) {
+      .mission .mod-decor-3 {
+        width: 43.23%;
+        height: 43.23%;
+        right: 128%;
+        bottom: -24%; } }
+    .mission .mod-decor-3:after {
+      top: -8px;
+      left: -5px; }
+      @media (min-width: 768px) {
+        .mission .mod-decor-3:after {
+          top: -18px;
+          left: -11px; } }
+  .mission .mod-decor-4 {
+    background: url("../assets/img/mission-decor-3.png") 50% 50% no-repeat;
+    background-size: contain;
+    right: calc(100% + 18px);
+    bottom: 23px; }
+    @media (min-width: 768px) {
+      .mission .mod-decor-4 {
+        width: 47.775%;
+        height: 47.775%;
+        right: 130%;
+        bottom: 35%; } }
+    .mission .mod-decor-4:after {
+      top: -3px;
+      left: -8px; }
+      @media (min-width: 768px) {
+        .mission .mod-decor-4:after {
+          top: -6px;
+          left: -18px; } }
+  .mission .mod-decor-5 {
+    background: url("../assets/img/mission-decor-2.png") 50% 50% no-repeat;
+    background-size: contain;
+    left: calc(100% + 23px);
+    bottom: 42px; }
+    @media (min-width: 768px) {
+      .mission .mod-decor-5 {
+        width: 47.775%;
+        height: 47.775%;
+        left: 200%;
+        bottom: 21%; } }
+    .mission .mod-decor-5:after {
+      top: -8px;
+      left: -5px; }
+      @media (min-width: 768px) {
+        .mission .mod-decor-5:after {
+          top: -18px;
+          left: -11px; } }
+
 .mult {
   padding-top: 12px; }
   .mult-slider {
