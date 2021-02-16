@@ -93,6 +93,16 @@ function getGridSize() {
             (window.innerWidth < 720) ? 2 :
             (window.innerWidth < 1140) ? 3 : 4;
 }
+function throttle(f, t) {
+    return function (args) {
+      let previousCall = this.lastCall;
+      this.lastCall = Date.now();
+      if (previousCall === undefined // function is being called for the first time
+          || (this.lastCall - previousCall) > t) { // throttle time has elapsed
+        f(args);
+      }
+    }
+  }
 
 $(window).load(function(){
 
@@ -126,20 +136,8 @@ $(window).load(function(){
         $('section.' + ref).slideToggle('slow');
     });
 
-    function throttle(callback, interval) {
-        let enableCall = true;
-      
-        return function(...args) {
-          if (!enableCall) return;
-      
-          enableCall = false;
-          callback.apply(this, args);
-          setTimeout(() => enableCall = true, interval);
-        }
-    }
-
-    $(window).bind('resize mousemove scroll',function(e) { parallax(e); });
-    $(document).bind('mousemove scroll',function(e) { parallax(e); });
+    window.addEventListener('scroll', parallax);
+    window.addEventListener('mousemove', parallax);
 
     function parallax(e){
         let scroll = $(window).scrollTop();
@@ -147,6 +145,7 @@ $(window).load(function(){
         let clY = e.pageY ? e.pageY / window.innerHeight : 0.5;
         let clX = e.pageX? e.pageX / window.innerWidth: 0.5;
         $('.js-parallax').each(function(){
+            console.log('par');
             $this = $(this);
             let offset = $this.offset();
             if ($this.hasClass('mod-p-1')){
