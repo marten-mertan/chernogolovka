@@ -18,7 +18,7 @@
     width: 223px;
     height: 223px;
     padding: 12px;
-    transition: all .15s ease; }
+    transition: all .15s linear; }
     @media (min-width: 768px) {
       .mission-block {
         position: absolute; } }
@@ -205,7 +205,7 @@
       .mission .mod-mission-6 {
         width: 31.4%;
         height: 19.031%;
-        left: 68%;
+        left: 73%;
         top: 63.5%;
         padding: 16px; } }
     .mission .mod-mission-6 h2 {

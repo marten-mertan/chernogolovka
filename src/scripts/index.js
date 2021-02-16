@@ -35,29 +35,45 @@ $(window).load(function(){
         $('section').not('.'+ref).slideDown('slow');
         $('section.' + ref).slideToggle('slow');
     });
-    
-    $(window).scroll(function() {
+
+    function throttle(callback, interval) {
+        let enableCall = true;
+      
+        return function(...args) {
+          if (!enableCall) return;
+      
+          enableCall = false;
+          callback.apply(this, args);
+          setTimeout(() => enableCall = true, interval);
+        }
+    }
+
+    $(window).bind('resize mousemove scroll',function(e) { parallax(e); });
+    $(document).bind('mousemove scroll',function(e) { parallax(e); });
+
+    function parallax(e){
         let scroll = $(window).scrollTop();
-        let height = $(window).height();
-        console.log(height);
+        let height = $(window).height(); 
+        let clY = e.pageY ? e.pageY / window.innerHeight : 0.5;
+        let clX = e.pageX? e.pageX / window.innerWidth: 0.5;
         $('.js-parallax').each(function(){
             $this = $(this);
             let offset = $this.offset();
-            console.log(offset, scroll);
             if ($this.hasClass('mod-p-1')){
-                $this.css('transform', 'translateY('+(-scroll+(offset.top+height)/2)*0.12+'px)');
+                $this.css('transform', 'translate('+(clX-0.5)*50+'px, '+((-scroll+(offset.top+height)/2)*0.12+(clY-0.5)*30)+'px)');
                 return;
             }
             if ($this.hasClass('mod-p-2')){
-                $this.css('transform', 'translateY('+(-scroll+(offset.top+height)/2)*0.08+'px)');
+                $this.css('transform', 'translate('+(clX-0.5)*30+'px, '+((-scroll+(offset.top+height)/2)*0.08+(clY-0.5)*20)+'px)');
                 return;
             }
             if ($this.hasClass('mod-p-3')){
-                $this.css('transform', 'translateY('+(-scroll+(offset.top+height)/2)*0.04+'px)');
+                $this.css('transform', 'translate('+(clX-0.5)*10+'px, '+((-scroll+(offset.top+height)/2)*0.04+(clY-0.5)*10)+'px)');
                 return;
             }
-            $this.css('transform', 'translateY('+(-scroll+(offset.top+height)/2)*0+'px)');
+            $this.css('transform', 'translate('+(clX-0.5)*10+'px, '+(0+(clY-0.5)*10)+'px)');
         });
-    });
+
+    }
 
 });
