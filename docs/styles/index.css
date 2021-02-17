@@ -17,9 +17,7 @@
     border-radius: 50%;
     width: 223px;
     height: 223px;
-    padding: 12px;
-    transition: all .15s linear;
-    -moz-transition-duration: 0s; }
+    padding: 12px; }
     @media (min-width: 768px) {
       .mission-block {
         position: absolute; } }

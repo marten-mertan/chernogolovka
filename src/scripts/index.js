@@ -45,32 +45,35 @@ $(window).load(function(){
         $('section').not('.'+ref).slideDown('slow');
         $('section.' + ref).slideToggle('slow');
     });
+    var clY =  0.5;
+    var clX =  0.5;
 
     window.addEventListener('scroll', parallax);
     window.addEventListener('mousemove', parallax);
 
+
     function parallax(e){
         let scroll = $(window).scrollTop();
         let height = $(window).height(); 
-        let clY = e.pageY ? e.pageY / window.innerHeight : 0.5;
-        let clX = e.pageX? e.pageX / window.innerWidth: 0.5;
+        clY = e.pageY ? e.pageY / window.innerHeight : clY;
+        clX = e.pageX ? e.pageX / window.innerWidth: clX;
         $('.js-parallax').each(function(){
             console.log('par');
             $this = $(this);
             let offset = $this.offset();
             if ($this.hasClass('mod-p-1')){
-                $this.css('transform', 'translate('+(clX-0.5)*50+'px, '+((-scroll+(offset.top+height)/2)*0.12+(clY-0.5)*30)+'px)');
+                $this.css('transform', 'translate3d('+(clX-0.5)*50+'px, '+((-scroll+(offset.top+height)/2)*0.12+(clY-0.5)*30)+'px, 0)');
                 return;
             }
             if ($this.hasClass('mod-p-2')){
-                $this.css('transform', 'translate('+(clX-0.5)*30+'px, '+((-scroll+(offset.top+height)/2)*0.08+(clY-0.5)*20)+'px)');
+                $this.css('transform', 'translate3d('+(clX-0.5)*30+'px, '+((-scroll+(offset.top+height)/2)*0.08+(clY-0.5)*20)+'px, 0)');
                 return;
             }
             if ($this.hasClass('mod-p-3')){
-                $this.css('transform', 'translate('+(clX-0.5)*10+'px, '+((-scroll+(offset.top+height)/2)*0.04+(clY-0.5)*10)+'px)');
+                $this.css('transform', 'translate3d('+(clX-0.5)*10+'px, '+((-scroll+(offset.top+height)/2)*0.04+(clY-0.5)*10)+'px, 0)');
                 return;
             }
-            $this.css('transform', 'translate('+(clX-0.5)*10+'px, '+(0+(clY-0.5)*10)+'px)');
+            $this.css('transform', 'translate3d('+(clX-0.5)*10+'px, '+(0+(clY-0.5)*10)+'px)');
         });
 
     }
