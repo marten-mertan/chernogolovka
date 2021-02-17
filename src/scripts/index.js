@@ -56,9 +56,8 @@ $(window).load(function(){
         let scroll = $(window).scrollTop();
         let height = $(window).height(); 
         clY = e.pageY ? e.pageY / window.innerHeight : clY;
-        clX = e.pageX ? e.pageX / window.innerWidth: clX;
+        clX = e.pageX ? e.pageX / window.innerWidth : clX;
         $('.js-parallax').each(function(){
-            console.log('par');
             $this = $(this);
             let offset = $this.offset();
             if ($this.hasClass('mod-p-1')){
@@ -73,7 +72,7 @@ $(window).load(function(){
                 $this.css('transform', 'translate3d('+(clX-0.5)*10+'px, '+((-scroll+(offset.top+height)/2)*0.04+(clY-0.5)*10)+'px, 0)');
                 return;
             }
-            $this.css('transform', 'translate3d('+(clX-0.5)*10+'px, '+(0+(clY-0.5)*10)+'px)');
+            $this.css('transform', 'translate3d('+(clX-0.5)*10+'px, '+(0+(clY-0.5)*10)+'px, 0)');
         });
 
     }
