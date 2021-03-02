@@ -47,10 +47,10 @@ $(window).load(function(){
     });
     var clY =  0.5;
     var clX =  0.5;
-
-    window.addEventListener('scroll', parallax);
-    window.addEventListener('mousemove', parallax);
-
+    if ($('.js-parallax').length){
+        window.addEventListener('scroll', parallax);
+        window.addEventListener('mousemove', parallax);
+    }
 
     function parallax(e){
         let scroll = $(window).scrollTop();
@@ -76,5 +76,12 @@ $(window).load(function(){
         });
 
     }
-
+    
+    $(document).on('click', function(e){
+        var element = $('.js-product-description');
+        var parent = $('.js-product-item');
+        if (!element.is(e.target) && element.has(e.target).length === 0 && parent.has(e.target).length === 0){
+            element.removeClass('open');
+        }
+    });
 });
