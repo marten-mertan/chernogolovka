@@ -388,7 +388,10 @@
   padding-top: 12px; }
   .mult-slider {
     position: relative;
-    margin-bottom: 20px; }
+    margin-bottom: 60px; }
+    @media (max-width: 1400px) {
+      .mult-slider {
+        margin-bottom: 40px; } }
     .mult-slider-item {
       position: relative;
       height: 790px;
@@ -668,6 +671,21 @@
   .mult-news {
     max-width: 1344px;
     margin: 0 auto 40px; }
+    .mult-news__title {
+      width: 100%;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 49px;
+      color: #333;
+      text-align: center;
+      margin-bottom: 40px; }
+      @media (max-width: 767px) {
+        .mult-news__title {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 29px;
+          margin-bottom: 20px; } }
     .mult-news .catalog.sections .items {
       margin: 0 0 20px 0; }
     .mult-news .catalog.sections .item {
@@ -1020,11 +1038,11 @@
       position: relative;
       max-width: 1344px;
       margin: 0 auto;
-      padding: 80px 20px;
+      padding: 20px;
       z-index: 1; }
       @media (max-width: 767px) {
         .mult-advise-wrap {
-          padding: 70px 16px; } }
+          padding: 20px 16px; } }
     .mult-advise__title {
       width: 100%;
       font-style: normal;
@@ -1032,7 +1050,7 @@
       font-size: 40px;
       line-height: 49px;
       text-align: center;
-      color: #fff;
+      color: #333;
       margin-bottom: 40px; }
       @media (max-width: 767px) {
         .mult-advise__title {
@@ -1043,6 +1061,8 @@
           margin-bottom: 20px; } }
     .mult-advise-content {
       display: flex;
+      max-width: 1060px;
+      margin: 0 auto;
       align-items: flex-end;
       justify-content: center; }
       @media (max-width: 767px) {
@@ -1074,7 +1094,7 @@
       align-self: center;
       margin: auto 20px auto auto;
       background: #fff;
-      padding: 40px 30px;
+      padding: 10px 30px 30px;
       border-radius: 4px; }
       @media (max-width: 767px) {
         .mult-advise-quote {
