@@ -1021,7 +1021,6 @@
             display: none; } }
   .mult-advise {
     position: relative;
-    background-color: #707eBd;
     margin-bottom: 40px; }
     @media (max-width: 767px) {
       .mult-advise {
@@ -1073,7 +1072,6 @@
       flex: 0 0 auto;
       width: 289px;
       height: 367px;
-      margin-right: 26px;
       background: url("../assets/img/mysia.png") 50% 50% no-repeat;
       background-size: contain; }
       @media (max-width: 1200px) {
