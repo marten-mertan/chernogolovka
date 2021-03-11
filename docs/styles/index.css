@@ -1248,7 +1248,7 @@
     position: relative;
     max-width: 1344px;
     margin: 0 auto;
-    padding: 20px 0 60px;
+    padding: 20px 23px 60px;
     z-index: 1; }
     @media (max-width: 767px) {
       .mult-buy {
@@ -1405,3 +1405,8 @@
 @media (max-width: 767px) {
   .mobile .mult-slider .flex-direction-nav {
     display: none; } }
+
+@media (max-width: 767px) {
+  .mobile .mult-buy-slider .flex-direction-nav {
+    display: flex;
+    top: calc(50% - 50px); } }
