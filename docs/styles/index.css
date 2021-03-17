@@ -411,6 +411,9 @@
       @media (max-width: 767px) {
         .mult-slider-item {
           height: 376px; } }
+      @media (max-width: 639px) {
+        .mult-slider-item {
+          height: 58.75vw; } }
       .mult-slider-item-wrap {
         position: relative;
         width: 100%;
@@ -439,6 +442,9 @@
           @media (max-width: 767px) {
             .mult-slider-item-wrap-mobile {
               display: block; } }
+          @media (max-width: 639px) {
+            .mult-slider-item-wrap-mobile {
+              height: 58.75vw; } }
       .mult-slider-item-logos {
         position: absolute;
         display: flex;
@@ -462,9 +468,6 @@
         @media (max-width: 767px) {
           .mult-slider-item-buttons {
             bottom: -10px; } }
-        @media (max-width: 480px) {
-          .mult-slider-item-buttons {
-            bottom: 0; } }
       .mult-slider-item-button-1 {
         display: block;
         width: 212px;
@@ -491,8 +494,8 @@
             margin-right: 100px; } }
         @media (max-width: 480px) {
           .mult-slider-item-button-1 {
-            width: 107px;
-            height: 76px;
+            width: 78px;
+            height: 55px;
             margin-right: 60px; } }
       .mult-slider-item-button-2 {
         display: block;
@@ -520,6 +523,10 @@
           .mult-slider-item-button-2 {
             width: 107px;
             height: 76px; } }
+        @media (max-width: 480px) {
+          .mult-slider-item-button-2 {
+            width: 78px;
+            height: 55px; } }
       .mult-slider-item-logo-1 {
         width: 133px;
         height: 133px;
@@ -561,9 +568,13 @@
         @media (max-width: 767px) {
           .mult-slider-item-bottom {
             bottom: 0; } }
+        @media (max-width: 480px) {
+          .mult-slider-item-bottom {
+            bottom: -10px; } }
     .mult-slider .flex-control-nav {
       bottom: 100px;
-      transition: all .2s ease; }
+      transition: all .2s ease;
+      z-index: 1; }
       @media (max-width: 1600px) {
         .mult-slider .flex-control-nav {
           bottom: 88px; } }
@@ -579,6 +590,9 @@
       @media (max-width: 767px) {
         .mult-slider .flex-control-nav {
           bottom: 40px; } }
+      @media (max-width: 480px) {
+        .mult-slider .flex-control-nav {
+          bottom: 12px; } }
     .mult-slider .flex-control-paging li {
       margin: 0 0 0 10px; }
       .mult-slider .flex-control-paging li:first-of-type {
