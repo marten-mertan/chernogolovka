@@ -46,6 +46,17 @@
         .mission-block h2 {
           font-size: 30px;
           line-height: 37px; } }
+      .mission-block h2.mod-sm-font {
+        font-size: 6.5vw;
+        line-height: 8.33vw; }
+        @media (min-width: 768px) {
+          .mission-block h2.mod-sm-font {
+            font-size: 22px;
+            line-height: 28px; } }
+        @media (min-width: 1320px) {
+          .mission-block h2.mod-sm-font {
+            font-size: 30px;
+            line-height: 37px; } }
     .mission-block p {
       font-size: 3.14vw;
       line-height: 4vw;

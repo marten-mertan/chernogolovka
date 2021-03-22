@@ -47,6 +47,20 @@
                 font-size: 30px;
                 line-height: 37px;
             }
+
+            &.mod-sm-font {
+                font-size: 6.5vw;
+                line-height: 8.33vw;
+
+                @media (min-width: 768px){
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+                @media (min-width: 1320px){
+                    font-size: 30px;
+                    line-height: 37px;
+                }
+            }
         }
         p{
             font-size: 3.14vw;
