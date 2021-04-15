@@ -17,6 +17,46 @@
         max-height: 100%;
         max-width: 100%;
     }
+    .flexslider .flex-direction-nav a{
+        width: 24px;
+        height: 24px;
+        background: #30a657;
+        &:before {
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 8px;
+            margin: 0;
+            background: url(../assets/img/brand-slider-arrow.svg) 0 0 no-repeat;
+        }
+        &:after {
+            display: none;
+        }
+        &.flex-next {
+            margin-top: -12px;
+            @media (max-width: 767px) {
+                border-radius: 3px;
+            }
+            &:before {
+                transform: translate(-50%, -50%);
+            }
+        }
+        &.flex-prev {
+            margin-top: -12px;
+            @media (max-width: 767px) {
+                border-radius: 3px;
+            }
+            &:before {
+                transform: translate(-50%, -50%) scale(-1, 1);
+            }
+        }
+    }
+    .flexslider .flex-direction-nav a.flex-next:hover:before {
+        background-position: 0 0;
+    }
+    .flexslider .flex-direction-nav a.flex-prev:hover:before {
+        background-position: 0 0;
+    }
     &.hover-arrows {
         .flexslider .flex-direction-nav {
             opacity: 0;
@@ -34,27 +74,6 @@
                 }
             }
         }
-        &:hover {
-            .flexslider .flex-direction-nav {
-                opacity: 1 !important;
-                visibility: visible;
-                transition: all .3s ease;
-                &.opacity1 {
-                    opacity: 1 !important;
-                    visibility: visible;
-                }
-            }
-        }
-    }
-    .flexslider .flex-direction-nav a{
-        width: 30px;
-        height: 30px;
-        &.flex-next {
-            margin-top: -15px;
-        }
-        &.flex-prev {
-            margin-top: -15px;
-        }
     }
 }
 
@@ -66,14 +85,22 @@
 
 // фикс отрицательных марджинов у стрелок слайдера
 .catalog.item-views .image-brand-slider .flexslider .flex-direction-nav .flex-next {
-    right: 4px !important;
-    @media (max-width: 540px) {
-        right: 0 !important;
-    }
+    right: -30px !important;
 }
 .catalog.item-views .image-brand-slider .flexslider .flex-direction-nav .flex-prev {
-    left: 4px !important;
-    @media (max-width: 540px) {
-        left: 0 !important;
+    left: -30px !important;
+}
+
+.catalog.item-views .item:hover {
+    .hover-arrows {
+        .flexslider .flex-direction-nav {
+            opacity: 1 !important;
+            visibility: visible;
+            transition: all .3s ease;
+            &.opacity1 {
+                opacity: 1 !important;
+                visibility: visible;
+            }
+        }
     }
 }
