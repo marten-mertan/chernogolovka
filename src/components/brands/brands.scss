@@ -57,6 +57,17 @@
     .flexslider .flex-direction-nav a.flex-prev:hover:before {
         background-position: 0 0;
     }
+    .flexslider {
+        @media (max-width: 540px) {
+            margin-bottom: 39px;
+        }
+    }
+    .flexslider.flexslider-control-nav {
+        margin-bottom: 48px;
+        @media (max-width: 540px) {
+            margin-bottom: 48px;
+        }
+    }
     &.hover-arrows {
         .flexslider .flex-direction-nav {
             opacity: 0;

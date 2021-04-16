@@ -48,6 +48,14 @@
     background-position: 0 0; }
   .image-brand-slider .flexslider .flex-direction-nav a.flex-prev:hover:before {
     background-position: 0 0; }
+  @media (max-width: 540px) {
+    .image-brand-slider .flexslider {
+      margin-bottom: 39px; } }
+  .image-brand-slider .flexslider.flexslider-control-nav {
+    margin-bottom: 48px; }
+    @media (max-width: 540px) {
+      .image-brand-slider .flexslider.flexslider-control-nav {
+        margin-bottom: 48px; } }
   .image-brand-slider.hover-arrows .flexslider .flex-direction-nav {
     opacity: 0;
     visibility: hidden; }
