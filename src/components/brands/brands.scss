@@ -115,3 +115,32 @@
         }
     }
 }
+
+html[xmlns] .image-brand-slider .flexslider .slides {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.item-views.sections.type_4_within .items .item .image-brand-slider .image{
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    @media (max-width: 540px) {
+        max-height: 365px;
+    }
+}
+
+.catalog.sections .item .image-brand-slider .image img {
+    flex-shrink: 1;
+    flex-grow: 0;
+    min-height: 0;
+    max-height: 100%;
+    min-width: 0;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
