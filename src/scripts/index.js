@@ -15,20 +15,23 @@ function throttle(f, t) {
   }
 
 $(window).load(function(){
-
-    $('.js-mult-slider').flexslider({
-        animation: "slide"
-    });
-    $('.js-mult-buy-slider').flexslider({
-        animation: "slide",
-        itemWidth: 229,
-        itemMargin: 40,
-        controlNav: false,
-        prevText: "",
-        nextText: "",
-        minItems: getGridSize(),
-        maxItems: getGridSize()
-    });
+    if ($('.js-mult-slider').length) {
+        $('.js-mult-slider').flexslider({
+            animation: "slide"
+        });
+    }
+    if ($('.js-mult-buy-slider').length) {
+        $('.js-mult-buy-slider').flexslider({
+            animation: "slide",
+            itemWidth: 229,
+            itemMargin: 40,
+            controlNav: false,
+            prevText: "",
+            nextText: "",
+            minItems: getGridSize(),
+            maxItems: getGridSize()
+        });
+    }
     $(document).on('click','.js-product-item', function(e){
         e.preventDefault();
         let ref = $(this).attr('href')
